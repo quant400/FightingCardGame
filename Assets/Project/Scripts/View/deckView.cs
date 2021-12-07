@@ -67,7 +67,9 @@ public class deckView : MonoBehaviour
             {
                 localFormedDeck.Add(cardClassObj.cardData);
                 cardClassObj.cardChoosen = true;
+                cardClassObj.gameObject.GetComponent<Button>().image.color = Color.green;
                 leftSpots.Value--;
+
             }
             
             
@@ -83,6 +85,7 @@ public class deckView : MonoBehaviour
                 localFormedDeck = localFormedDeck.Where(x => x != null).ToList();
                 leftSpots.Value++;
                 cardClassObj.cardChoosen = false;
+                cardClassObj.gameObject.GetComponent<Button>().image.color = Color.white;
 
             }
 
