@@ -21,6 +21,7 @@ public class deckView : MonoBehaviour
     public int deckFormingLimit;
     public List<deckModel.cardID> localFormedDeck = new List<deckModel.cardID>();
     public ReactiveProperty<int> leftSpots = new ReactiveProperty<int>();
+    [SerializeField] int deckRarity;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +77,7 @@ public class deckView : MonoBehaviour
                     if (cardClassObj.cardData.cardRarityValue != 0)
                     {
                         deckModel.deckRarityValue += cardClassObj.cardData.cardRarityValue;
+           
                     }
                 }
                 else
@@ -112,6 +114,7 @@ public class deckView : MonoBehaviour
 
         }
         deckModel.currentDeck = localFormedDeck;
+        deckRarity = deckModel.deckRarityValue;
     }
     public bool checkCardBeforeAdd(deckModel.cardType type, bool add)
     {
