@@ -17,7 +17,8 @@ public class cardClass : MonoBehaviour
     {
         cardData = new deckModel.cardID();
         cardData.id = UnityEngine.Random.Range(0, 999);
-        gameObject.GetComponentInChildren<Text>().text = "Card N : " + cardData.id;
+        cardData.type= (deckModel.cardType)UnityEngine.Random.Range(0, 3);
+        gameObject.GetComponentInChildren<Text>().text = cardData.type.ToString()+ " Card N : " + cardData.id;
 
     }
 }

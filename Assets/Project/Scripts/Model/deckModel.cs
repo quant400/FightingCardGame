@@ -11,13 +11,18 @@ using UniRx.Toolkit;
 public struct deckModel
 {
     [Serializable]
-
+    public enum cardType
+        {
+        Diamond,Gold,Silver
+        };
+    [Serializable]
     public class cardID
     {
         public int id;
         public GameObject prefab;
         public int staminaRequired;
-
+        public int cardRarityValue;
+        public cardType type;
     }
     public static int deckMaxCount=20;
     public static int cardsCounts=50;
@@ -27,5 +32,14 @@ public struct deckModel
     public static int leftCardsInGame=20;
     public static bool deckFormed;
     public static bool noLeftCards;
-    
+    public static int deckRarityValue;
+    public static int DiamondLimit=4;
+    public static int GoldLimit = 6;
+    public static int SilverLimit = 10;
+    public static int CurrentDiamondCards = 0;
+    public static int CurrentGoldCards = 0;
+    public static int CurrentSilverCards = 0;
+
+
+
 }
