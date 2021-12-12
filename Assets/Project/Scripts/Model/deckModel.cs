@@ -23,6 +23,7 @@ public struct deckModel
         public int staminaRequired;
         public int cardRarityValue;
         public cardType type;
+        public string cardDiscription;
     }
     public static int deckMaxCount=20;
     public static int cardsCounts=50;
