@@ -24,6 +24,8 @@ public struct fighterModel
         public float powerLevel;
         public int tokenPrice;
         public string discription;
+        public GameObject wearablesPrefab;
+        public Texture2D wearablesIcon;
         public bool owned;
     }
     public class fighterData
@@ -39,6 +41,9 @@ public struct fighterModel
         public float accerancypercentage;
         public string emoteAniamtionName;
         public string fighterDescription;
+        public GameObject fighterPrefab;
+        public Texture2D fighterIcon;
+
         public bool owned;
         
     }
