@@ -7,6 +7,8 @@ using System;
 using UniRx.Triggers;
 using UniRx.Operators;
 using System.Linq;
+using System.IO;
+
 public class deckView : MonoBehaviour
 {
     [Serializable]
@@ -42,6 +44,8 @@ public class deckView : MonoBehaviour
             }
         }
         observeCardsChoiceButtons();
+        loadResourcesSprites();
+        setCardsTexturesAndId();
     }
     void observeCardsChoiceButtons()
     {
@@ -57,6 +61,7 @@ public class deckView : MonoBehaviour
         leftSpots
             .Where(_ => leftSpots.Value == 0)
             .Do(_ => Debug.Log("deck formed"))
+            .Do(_ => deckModel.currentDeckLeftCards = deckModel.currentDeck)
             .Subscribe()
             .AddTo(this);
     }
@@ -200,5 +205,58 @@ public class deckView : MonoBehaviour
         }
 
         return _list;
+    }
+    public void setCardsTexturesAndId()
+    {
+        setCardsID();
+        for (int i = 0; i < cardsChoices.Count; i++)
+        {
+           
+
+            cardsChoices[i].cardChoiceButton.image.sprite = deckModel.cardsTextureSprites[i]; //This is what I need help with
+
+            
+        }
+    }
+    void setCardsID()
+    {
+        for (int i = 0; i < cardsChoices.Count; i++)
+        {
+            setCardsID(cardsChoices[i].cardButtonClass, i);
+
+        }
+    }
+    void imagePathesSet()
+    {
+        string[] pathes;
+        deckModel.cardsFolderPath = Application.streamingAssetsPath + "/Cards/";  //Get path of folder
+        pathes = Directory.GetFiles(deckModel.cardsFolderPath, "*.jpg"); // Get all files of type .png in this folder
+        if (pathes != null)
+        {
+
+            for (int i = 0; i < pathes.Length; i++)
+            {
+                deckModel.cardsTexturesPaths.Add(pathes[i]); // set pathes in the model
+                Debug.Log(pathes[i]);
+            }
+        }
+        
+    }
+    void loadResourcesSprites()
+    {
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Cards") as Sprite[];
+        if (sprites != null)
+        {
+            for (int i = 0; i < sprites.Length; i++)
+            {
+                deckModel.cardsTextureSprites.Add(sprites[i]); // set pathes in the model
+            }
+        }
+    }
+    void setCardsID(cardClass card,int id)
+    {
+        card.cardData.id = id;
+        card.gameObject.GetComponentInChildren<Text>().text = card.cardData.type.ToString() + " Card N : " + card.cardData.id;
+
     }
 }

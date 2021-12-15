@@ -11,16 +11,18 @@ using UniRx.Toolkit;
 
 public class cardClass : MonoBehaviour
 {
-    public deckModel.cardID cardData;
+    public deckModel.cardID cardData=new deckModel.cardID();
     public bool cardChoosen;
     public void Start()
     {
-        cardData = new deckModel.cardID();
-        cardData.id = UnityEngine.Random.Range(0, 999);
         cardData.type= (deckModel.cardType)UnityEngine.Random.Range(0, 3);
         cardData.cardRarityValue = UnityEngine.Random.Range(0, 2);
 
-        gameObject.GetComponentInChildren<Text>().text = cardData.type.ToString()+ " Card N : " + cardData.id;
+    }
+    public void setCardData(deckModel.cardID cardDataSaved)
+    {
+        cardData = cardDataSaved;
+        gameObject.GetComponent<Button>().image.sprite = deckModel.cardsTextureSprites[cardData.id]; //This is what I need help with
 
     }
 }

@@ -59,6 +59,7 @@
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Project\Scripts\Model\deckModel.cs" />
     <Compile Include="Assets\Project\Scripts\Helpers\cardClass.cs" />
+    <Compile Include="Assets\Project\Scripts\Helpers\wearablesClass.cs" />
     <Compile Include="Assets\Project\Scripts\Model\fighterModel.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Project\Scripts\Model\GameModel.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="Assets\Project\Scripts\View\characterSelectionView.cs" />
     <Compile Include="Assets\Project\Scripts\Presenter\deckBuildPresenter.cs" />
     <Compile Include="Assets\Project\Scripts\Helpers\fighterClass.cs" />
-    <Compile Include="Assets\Project\Scripts\Helpers\wearablesClass.cs" />
+    <Compile Include="Assets\Project\Scripts\View\deckLoadView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
