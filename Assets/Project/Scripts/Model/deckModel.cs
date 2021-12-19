@@ -13,8 +13,15 @@ public struct deckModel
     [Serializable]
     public enum cardType
         {
-        Diamond,Gold,Silver
+        Diamond,Gold,Bronze,Silver
         };
+    [Serializable]
+
+    public enum Tier
+    {
+        attack,defense,buff
+    };
+
     [Serializable]
     public class cardID
     {
@@ -22,7 +29,12 @@ public struct deckModel
         public GameObject prefab;
         public int staminaRequired;
         public int cardRarityValue;
+        public int attackValue;
+        public int defenceValue;
+        public string stringName;
+        public int combIDCode;
         public cardType type;
+        public Tier cardTier;
         public string cardDiscription;
     }
     public static int deckMaxCount=20;
@@ -35,12 +47,16 @@ public struct deckModel
     public static bool deckFormed;
     public static bool noLeftCards;
     public static int deckRarityValue;
-    public static int DiamondLimit=4;
-    public static int GoldLimit = 6;
-    public static int SilverLimit = 10;
+    public static int DiamondLimit=3;
+    public static int GoldLimit = 4;
+    public static int SilverLimit = 7;
+    public static int BronzeLimit = 6;
+
     public static int CurrentDiamondCards = 0;
     public static int CurrentGoldCards = 0;
     public static int CurrentSilverCards = 0;
+    public static int CurrentBronzeCards = 0;
+
     public static List<string> cardsTexturesPaths = new List<string>();
     public static List<Sprite> cardsTextureSprites = new List<Sprite>();
     public static  string cardsFolderPath;

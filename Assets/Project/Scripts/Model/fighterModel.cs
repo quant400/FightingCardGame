@@ -34,13 +34,16 @@ public struct fighterModel
         public float id;
         public List<wearables> currentWearablesSelected = new List<wearables>();
         public float addedPowerLevel;
-        public float punchPower;
-        public float defencePower;
+        public float fighterAttackLevel;
+        public float fighterDefenceLevel;
         public float fighterSpeed;
-        public float fightResistnace;
+        public float fighterResistnace;
+        public float fighterTechniqueLevel;
         public float accerancypercentage;
         public string emoteAniamtionName;
         public string fighterDescription;
+        public float fighterRarityValue;
+        public bool critcalHitCondition;
         public GameObject fighterPrefab;
         public Texture2D fighterIcon;
 
@@ -52,6 +55,8 @@ public struct fighterModel
     public static float fighterStartStamina = 3;
     public static float fighterRoundAddedStamina = 1;
     public static float fighterCurrentStamina ;
+    public static float fighterLeftEnegy;
+    public static float fighterShieldLeftPower;
     public static fighterData currentChosenFighter = new fighterData();
     public static fighterData lastUsedFighter = new fighterData();
 

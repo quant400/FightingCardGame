@@ -152,6 +152,14 @@ public class deckView : MonoBehaviour
                     }
                      
                     break;
+                case deckModel.cardType.Bronze:
+                    if (deckModel.CurrentBronzeCards < deckModel.BronzeLimit)
+                    {
+                        deckModel.CurrentBronzeCards += 1;
+                        cond = true;
+                    }
+
+                    break;
             }
             return cond;
             
@@ -180,6 +188,14 @@ public class deckView : MonoBehaviour
                     if (deckModel.CurrentSilverCards >= 1)
                     {
                         deckModel.CurrentSilverCards -= 1;
+                        cond = true;
+                    }
+
+                    break;
+                case deckModel.cardType.Bronze:
+                    if (deckModel.CurrentBronzeCards >= 1)
+                    {
+                        deckModel.CurrentBronzeCards -= 1;
                         cond = true;
                     }
 

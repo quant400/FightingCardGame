@@ -15,7 +15,7 @@ public class cardClass : MonoBehaviour
     public bool cardChoosen;
     public void Start()
     {
-        cardData.type= (deckModel.cardType)UnityEngine.Random.Range(0, 3);
+        cardData.type= (deckModel.cardType)UnityEngine.Random.Range(0, 4);
         cardData.cardRarityValue = UnityEngine.Random.Range(0, 2);
 
     }

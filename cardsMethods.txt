@@ -1,0 +1,57 @@
+combine type : ComB method 
+-increase damage method / normal and debuff type condition
+-increase technique method
+-increase shield method
+-cretichal Strike method
+attack type :  attack Method
+-strike method 
+-block enemy heal one round method
+-ignore shield method
+-decrease heal card opp have for 50/100 method
+-hit critcal chance of hit youself Method 
+-increase attack with condition
+-hit opp 3 times in a row 
+-decrease attack method
+enegry type 
+-gain stamina method / with  condition ... 
+-destroy energy with condition of combi
+-gain enegry with condition
+-steal one energy
+defense 
+-lower technique condition 
+-cant get enegy next turn
+-cant hit you next round
+-increase shield method 
+attackDeffense
+-50/100 of damage back to opp
+- a card become invalid method
+-miss attack condition
+-cant do cretical hit next round
+-no energy next turn
+Heal 
+-heal with x value 
+-increase defense 10 each round 
+draw type 
+-draw cards with condition 
+-both player draw card 
+-random card remove from opp hand
+healAttack
+-heal by 40 
+debuff
+-shield decrease for opp method 
+-transfer debuff to opp 
+
+
+------------------------------
+main methods Buff :
+-Combine Cards method (card 1 , card 2 ): sub methods : damage + , tech + , shield + , Cretical chance, enegy - 
+-Attack Method : strike , block heal , ignore shield , heal --, criticla chance or self hit chance , attack + with Cond , hit more than once , attack - , attack X Double on shield..
+-energy method : gain stemine /with Cond , energy + / cond  , steal energy ,
+-defence method : tech -/ cond , no enegry / cond , no hit cond , shield + 
+-Attack Deffence : give back damage , invalid card , miss attack / cond ,no critical hit / cond , no enegy cond .
+-heal mathod :heal ++ , defence++, 
+-draw type : draw card / cond , both player draw , remove card from player hand ,
+-heal attack : heal by player by card damage 
+-debuff : sheild -- , all debuff go to opp (reverse). 
+
+
