@@ -17,7 +17,7 @@ public class cardActionView : MonoBehaviour
         public List<deckModel.cardID> deckOwned;
         public List<deckModel.cardID> deckLeftCards;
         public List<deckModel.cardID> inHandsCards;
-
+        public bool isMine;
     }
 
     public List<fighterInGame> fighters = new List<fighterInGame>();
@@ -33,6 +33,86 @@ public class cardActionView : MonoBehaviour
     {
         
     }
+    public void cardBuffValueUse(deckModel.cardID card)
+    {
+        if ((int)card.buffEffectData.effectedValueType.type != 0)
+        {
+            if (card.buffEffectData.effectedPlayer == deckModel.buffEffectdPlayer.otherPlayer)
+            {
+                for (int i = 0; i < fighters.Count; i++)
+                {
+                    if (!fighters[i].isMine)
+                    {
+                        cardBuff(card.buffEffectData, fighters[i]);
+                    }
+
+                }
+            }
+            else if (card.buffEffectData.effectedPlayer == deckModel.buffEffectdPlayer.self)
+            {
+                for (int i = 0; i < fighters.Count; i++)
+                {
+                    if (fighters[i].isMine)
+                    {
+                        cardBuff(card.buffEffectData, fighters[i]);
+
+                    }
+
+                }
+            }
+            else if (card.buffEffectData.effectedPlayer == deckModel.buffEffectdPlayer.allPlayers)
+            {
+                for (int i = 0; i < fighters.Count; i++)
+                {
+                    cardBuff(card.buffEffectData, fighters[i]);
+                }
+            }
+        }
+    }
+    public void cardBuff(deckModel.cardBuffEffect buffEffect , fighterInGame fighter)
+    {
+        if (buffEffect.effectedPlayer == deckModel.buffEffectdPlayer.otherPlayer)
+        {
+            switch (buffEffect.effectedValueType.type)
+            {
+                case deckModel.buffEffectedValueType.damage:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect);
+                    break;
+
+            }
+        }
+    }
+    public void buffValue(deckModel.valueAddedType valueAddType, float value , fighterInGame effectedPlayer, deckModel.cardBuffEffect buffData)
+    {
+        
+            if (valueAddType == deckModel.valueAddedType.down)
+            {
+                
+                effectedPlayer.fighterData.fighterHealth -= value;
+                    
+               
+            }
+            else if (valueAddType == deckModel.valueAddedType.up)
+            {
+                
+                effectedPlayer.fighterData.fighterHealth += value;
+              
+            }
+            else if (valueAddType == deckModel.valueAddedType.multi)
+            {
+                for (int i = 0; i < fighters.Count; i++)
+                {
+                    effectedPlayer.fighterData.fighterHealth -= value;
+                }
+            }
+
+
+
+           
+       
+    }
+    //void fighterValueBuff(fighterInGame fighter , float value , deckModel.buff)
+
     public void cardBuff(string buffStringName, deckModel.cardID cardPlayed , fighterInGame cardPlayer)
     {
 

@@ -46,15 +46,21 @@ public struct fighterModel
         public bool critcalHitCondition;
         public GameObject fighterPrefab;
         public Texture2D fighterIcon;
-
+        public  float fighterHealth = 4000;
+        public  float fighterLeftHealth;
+        public  float fighterStartStamina = 3;
+        public  float fighterRoundAddedStamina = 1;
+        public  float fighterCurrentStamina;
+        public  float fighterLeftEnegy;
+        public  float fighterShieldLeftPower;
         public bool owned;
         
     }
     public static float fighterHealth = 4000;
-    public static float fighterLeftHealth ;
+    public static float fighterLeftHealth;
     public static float fighterStartStamina = 3;
     public static float fighterRoundAddedStamina = 1;
-    public static float fighterCurrentStamina ;
+    public static float fighterCurrentStamina;
     public static float fighterLeftEnegy;
     public static float fighterShieldLeftPower;
     public static fighterData currentChosenFighter = new fighterData();
