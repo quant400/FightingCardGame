@@ -28,36 +28,42 @@ public struct fighterModel
         public Texture2D wearablesIcon;
         public bool owned;
     }
+    public class fighterDataValueClass
+    {
+        public string valueName;
+        public float value;
+    }
     public class fighterData
     {
         public string fighterName;
         public float id;
         public List<wearables> currentWearablesSelected = new List<wearables>();
-        public float addedPowerLevel;
-        public float fighterAttackLevel;
-        public float fighterDefenceLevel;
-        public float fighterSpeed;
-        public float fighterResistnace;
-        public float fighterTechniqueLevel;
-        public float accerancypercentage;
+        public fighterDataValueClass addedPowerLevel = new fighterDataValueClass();
+        public fighterDataValueClass fighterAttackLevel;
+        public fighterDataValueClass fighterDefenceLevel;
+        public fighterDataValueClass fighterSpeed;
+        public fighterDataValueClass fighterResistnace;
+        public fighterDataValueClass fighterTechniqueLevel;
+        public fighterDataValueClass accerancypercentage;
         public string emoteAniamtionName;
         public string fighterDescription;
-        public float fighterRarityValue;
-        public bool critcalHitCondition;
+        public fighterDataValueClass fighterRarityValue;
+        public fighterDataValueClass critcalHitCondition;
         public GameObject fighterPrefab;
         public Texture2D fighterIcon;
-        public  float fighterHealth = 4000;
-        public  float fighterLeftHealth;
-        public  float fighterStartStamina = 3;
-        public  float fighterRoundAddedStamina = 1;
-        public  float fighterCurrentStamina;
-        public  float fighterLeftEnegy;
-        public  float fighterShieldLeftPower;
+        public fighterDataValueClass fighterHealth ;
+        public fighterDataValueClass fighterLeftHealth;
+        public fighterDataValueClass fighterStartStamina;
+        public fighterDataValueClass fighterRoundAddedStamina;
+        public fighterDataValueClass fighterCurrentStamina;
+        public fighterDataValueClass fighterLeftEnegy;
+        public fighterDataValueClass fighterShieldLeftPower;
+        public List<fighterDataValueClass> effectValuesList=new List<fighterDataValueClass>();
         public bool owned;
         
     }
-    public static float fighterHealth = 4000;
-    public static float fighterLeftHealth;
+    public static float fighterStartHealth = 4000;
+    public static float fighterLeftHealthz;
     public static float fighterStartStamina = 3;
     public static float fighterRoundAddedStamina = 1;
     public static float fighterCurrentStamina;

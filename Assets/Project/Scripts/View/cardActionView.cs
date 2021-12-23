@@ -14,6 +14,7 @@ public class cardActionView : MonoBehaviour
     {
         public int playerID;
         public fighterModel.fighterData fighterData;
+        public inGameDeckModels.playerDecksModels playerDeckInGame;
         public List<deckModel.cardID> deckOwned;
         public List<deckModel.cardID> deckLeftCards;
         public List<deckModel.cardID> inHandsCards;
@@ -25,7 +26,7 @@ public class cardActionView : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -76,44 +77,91 @@ public class cardActionView : MonoBehaviour
             switch (buffEffect.effectedValueType.type)
             {
                 case deckModel.buffEffectedValueType.damage:
-                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect);
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
                     break;
-
+                case deckModel.buffEffectedValueType.defence:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.technique:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.energy:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.shield:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.strike:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.heal:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.drawCard:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.Debuff:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.hit:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.invalidCard:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.healFromCardDamage:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.removeCardFromHand:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.allDrawCard:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
+                case deckModel.buffEffectedValueType.cretical:
+                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    break;
             }
         }
     }
-    public void buffValue(deckModel.valueAddedType valueAddType, float value , fighterInGame effectedPlayer, deckModel.cardBuffEffect buffData)
+    public void buffValue(deckModel.valueAddedType valueAddType, float value, fighterInGame effectedPlayer, deckModel.cardBuffEffect buffData,string effectedName)
     {
-        
-            if (valueAddType == deckModel.valueAddedType.down)
-            {
-                
-                effectedPlayer.fighterData.fighterHealth -= value;
-                    
-               
-            }
-            else if (valueAddType == deckModel.valueAddedType.up)
-            {
-                
-                effectedPlayer.fighterData.fighterHealth += value;
-              
-            }
-            else if (valueAddType == deckModel.valueAddedType.multi)
-            {
-                for (int i = 0; i < fighters.Count; i++)
-                {
-                    effectedPlayer.fighterData.fighterHealth -= value;
-                }
-            }
 
+        if (valueAddType == deckModel.valueAddedType.down)
+        {
+            value = value * -1;
+        }
+        else if (valueAddType == deckModel.valueAddedType.up)
+        {
+        }
 
-
-           
-       
+        else if (valueAddType == deckModel.valueAddedType.multi)
+        {
+            for (int i = 0; i < fighters.Count; i++)
+            {
+                value += value;
+            }
+        }
+        fighterValueBuff(effectedPlayer, value, effectedName);
     }
-    //void fighterValueBuff(fighterInGame fighter , float value , deckModel.buff)
 
-    public void cardBuff(string buffStringName, deckModel.cardID cardPlayed , fighterInGame cardPlayer)
+
+
+
+
+
+    void fighterValueBuff(fighterInGame fighter , float valueAdded , string effectedValueName )
+    {
+        for(int i = 0; i < fighter.fighterData.effectValuesList.Count; i++)
+        {
+            if (effectedValueName.Equals(fighter.fighterData.effectValuesList[i].valueName))
+            {
+                fighter.fighterData.effectValuesList[i].value += valueAdded;
+            }
+        }
+    }
+
+    public void drawCardBuff(string buffStringName, deckModel.cardID cardPlayed , fighterInGame cardPlayer)
     {
 
     }
