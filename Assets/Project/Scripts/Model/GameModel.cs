@@ -22,6 +22,12 @@ public struct GameModel
         public  List<fighterModel.fighterData> ownedFighters = new List<fighterModel.fighterData>();
 
     }
+    public enum targetHitValue
+    {
+        shield,
+        health,
+        bothDirect,
+    };
     [Serializable]
     public enum GameState
     {
@@ -58,5 +64,5 @@ public struct GameModel
     public static ReactiveProperty<bool> userLogged = new ReactiveProperty<bool>();
 
     public static ReactiveProperty<bool> internetCondition = new ReactiveProperty<bool>();
-
+    public static targetHitValue targetHitChoice = targetHitValue.shield;
 }

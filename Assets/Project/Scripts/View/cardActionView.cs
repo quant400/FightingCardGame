@@ -10,23 +10,13 @@ using System.Linq;
 using System.IO;
 public class cardActionView : MonoBehaviour
 {
-    public class fighterInGame
-    {
-        public int playerID;
-        public fighterModel.fighterData fighterData;
-        public inGameDeckModels.playerDecksModels playerDeckInGame;
-        public List<deckModel.cardID> deckOwned;
-        public List<deckModel.cardID> deckLeftCards;
-        public List<deckModel.cardID> inHandsCards;
-        public bool isMine;
-    }
 
-    public List<fighterInGame> fighters = new List<fighterInGame>();
-
-    // Start is called before the first frame update
+    [SerializeField] fightView _fightView;
+    [SerializeField] deckLoadView _deckLoadView;
+    float localValue;
     void Start()
     {
-
+       
     }
 
     // Update is called once per frame
@@ -40,22 +30,22 @@ public class cardActionView : MonoBehaviour
         {
             if (card.buffEffectData.effectedPlayer == deckModel.buffEffectdPlayer.otherPlayer)
             {
-                for (int i = 0; i < fighters.Count; i++)
+                for (int i = 0; i < fightView.fighters.Count; i++)
                 {
-                    if (!fighters[i].isMine)
+                    if (!fightView.fighters[i].isMine)
                     {
-                        cardBuff(card.buffEffectData, fighters[i]);
+                        cardBuff(card.buffEffectData, fightView.fighters[i]);
                     }
 
                 }
             }
             else if (card.buffEffectData.effectedPlayer == deckModel.buffEffectdPlayer.self)
             {
-                for (int i = 0; i < fighters.Count; i++)
+                for (int i = 0; i < fightView.fighters.Count; i++)
                 {
-                    if (fighters[i].isMine)
+                    if (fightView.fighters[i].isMine)
                     {
-                        cardBuff(card.buffEffectData, fighters[i]);
+                        cardBuff(card.buffEffectData, fightView.fighters[i]);
 
                     }
 
@@ -63,14 +53,14 @@ public class cardActionView : MonoBehaviour
             }
             else if (card.buffEffectData.effectedPlayer == deckModel.buffEffectdPlayer.allPlayers)
             {
-                for (int i = 0; i < fighters.Count; i++)
+                for (int i = 0; i < fightView.fighters.Count; i++)
                 {
-                    cardBuff(card.buffEffectData, fighters[i]);
+                    cardBuff(card.buffEffectData, fightView.fighters[i]);
                 }
             }
         }
     }
-    public void cardBuff(deckModel.cardBuffEffect buffEffect , fighterInGame fighter)
+    public void cardBuff(deckModel.cardBuffEffect buffEffect , fightView.fighterInGame fighter)
     {
         if (buffEffect.effectedPlayer == deckModel.buffEffectdPlayer.otherPlayer)
         {
@@ -78,6 +68,7 @@ public class cardActionView : MonoBehaviour
             {
                 case deckModel.buffEffectedValueType.damage:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    _fightView.hitAction(fighter.playerID, GameModel.targetHitValue.bothDirect, localValue);
                     break;
                 case deckModel.buffEffectedValueType.defence:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
@@ -90,21 +81,36 @@ public class cardActionView : MonoBehaviour
                     break;
                 case deckModel.buffEffectedValueType.shield:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    if (buffEffect.effectedValueType.valueAddedDetails == deckModel.valueAddedType.ignore)
+                    {
+                        _fightView.hitAction(fighter.playerID, GameModel.targetHitValue.health, localValue);
+
+                    }
+                    else if (buffEffect.effectedValueType.valueAddedDetails == deckModel.valueAddedType.normal)
+
+                    {
+                        _fightView.hitAction(fighter.playerID, GameModel.targetHitValue.shield, localValue);
+                    }
+
                     break;
                 case deckModel.buffEffectedValueType.strike:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    _fightView.hitAction(fighter.playerID, GameModel.targetHitValue.bothDirect, localValue);
                     break;
                 case deckModel.buffEffectedValueType.heal:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    _fightView.hitAction(fighter.playerID, GameModel.targetHitValue.bothDirect, localValue);
                     break;
                 case deckModel.buffEffectedValueType.drawCard:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    drawCardBuff(buffEffect.effectedValueType.type.ToString(), fighter);
                     break;
                 case deckModel.buffEffectedValueType.Debuff:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
                     break;
                 case deckModel.buffEffectedValueType.hit:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    _fightView.hitAction(fighter.playerID, GameModel.targetHitValue.bothDirect, localValue);
                     break;
                 case deckModel.buffEffectedValueType.invalidCard:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
@@ -114,22 +120,35 @@ public class cardActionView : MonoBehaviour
                     break;
                 case deckModel.buffEffectedValueType.removeCardFromHand:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    removeCardFromHand(fighter.playerID, 1);
                     break;
                 case deckModel.buffEffectedValueType.allDrawCard:
-                    buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    if (buffEffect.effectedValueType.valueAddedDetails == deckModel.valueAddedType.normal)
+
+                    {
+                        for (int i = 0;i < fightView.fighters.Count; i++)
+                        {
+                            fighter = fightView.fighters[i];
+                            drawCardBuff(buffEffect.effectedValueType.type.ToString(), fighter);
+
+                        }
+                    }
                     break;
                 case deckModel.buffEffectedValueType.cretical:
                     buffValue(buffEffect.effectedValueType.valueAddedDetails, buffEffect.effectValueAdded, fighter, buffEffect, buffEffect.effectedValueType.type.ToString());
+                    if (critiaclStrikeChanceCalulation(50))
+                    {
+                        _fightView.hitAction(fighter.playerID, GameModel.targetHitValue.bothDirect, localValue);
+                    }
                     break;
             }
         }
     }
-    public void buffValue(deckModel.valueAddedType valueAddType, float value, fighterInGame effectedPlayer, deckModel.cardBuffEffect buffData,string effectedName)
+    public void buffValue(deckModel.valueAddedType valueAddType, float value, fightView.fighterInGame effectedPlayer, deckModel.cardBuffEffect buffData,string effectedName)
     {
-
         if (valueAddType == deckModel.valueAddedType.down)
         {
-            value = value * -1;
+            localValue = value * -1;
         }
         else if (valueAddType == deckModel.valueAddedType.up)
         {
@@ -137,20 +156,13 @@ public class cardActionView : MonoBehaviour
 
         else if (valueAddType == deckModel.valueAddedType.multi)
         {
-            for (int i = 0; i < fighters.Count; i++)
+            for (int i = 0; i < fightView.fighters.Count; i++)
             {
-                value += value;
+                localValue += value;
             }
-        }
-        fighterValueBuff(effectedPlayer, value, effectedName);
+        }        
     }
-
-
-
-
-
-
-    void fighterValueBuff(fighterInGame fighter , float valueAdded , string effectedValueName )
+    void fighterValueBuff(fightView.fighterInGame fighter , float valueAdded , string effectedValueName )
     {
         for(int i = 0; i < fighter.fighterData.effectValuesList.Count; i++)
         {
@@ -160,16 +172,21 @@ public class cardActionView : MonoBehaviour
             }
         }
     }
+    public void removeCardFromHand(int id,int numberOfCards)
+    {
 
-    public void drawCardBuff(string buffStringName, deckModel.cardID cardPlayed , fighterInGame cardPlayer)
+        _fightView.removeCard(id, numberOfCards);
+
+    }
+    public void drawCardBuff(string buffStringName,  fightView.fighterInGame cardPlayer)
+    {
+        _deckLoadView.loadTurnCard(1, cardPlayer.playerDeckInGame);
+    }
+    public void addOrLowerDamage(fightView.fighterInGame damagedPlayer,bool add)
     {
 
     }
-    public void addOrLowerDamage(fighterInGame damagedPlayer,bool add)
-    {
-
-    }
-    public void addOrLowerTech(fighterInGame addedToPlayer,bool add)
+    public void addOrLowerTech(fightView.fighterInGame addedToPlayer,bool add)
     {
 
     }
@@ -203,7 +220,7 @@ public class cardActionView : MonoBehaviour
             }
         } 
     }
-    public void addOrLowerEnergy(fighterInGame addedToPlayer, bool add)
+    public void addOrLowerEnergy(fightView.fighterInGame addedToPlayer, bool add)
     {
 
     }
@@ -215,9 +232,9 @@ public class cardActionView : MonoBehaviour
     {
 
     }
-    public void ignoreShield()
+    public void ignoreShield(fightView.fighterInGame player)
     {
-
+        player.targetHealth.Value= GameModel.targetHitValue.health;
     }
     public void addOrLowerHeal()
     {

@@ -63,15 +63,18 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Project\Scripts\Helpers\cardClass.cs" />
+    <Compile Include="Assets\Project\Scripts\Model\inGameDeckModels.cs" />
     <Compile Include="Assets\Project\Scripts\Helpers\wearablesClass.cs" />
     <Compile Include="Assets\Project\Scripts\Model\fighterModel.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
+    <Compile Include="Assets\Project\Scripts\Model\turnBasedModel.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Project\Scripts\Model\GameModel.cs" />
     <Compile Include="Assets\Project\Scripts\View\deckView.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+    <Compile Include="Assets\Project\Scripts\View\turnBasedView.cs" />
     <Compile Include="Assets\Project\Scripts\View\fightView.cs" />
     <Compile Include="Assets\Project\Scripts\Presenter\fightPresenter.cs" />
     <Compile Include="Assets\Project\Scripts\Presenter\MainPresenter.cs" />
@@ -89,7 +92,9 @@
     <Compile Include="Assets\Project\Scripts\Helpers\fighterClass.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-    <Compile Include="Assets\Project\Scripts\Model\inGameDeckModels.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviours\DemoTest\CardManager.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviours\DemoTest\PlayerCard.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviours\DemoTest\DropArea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />

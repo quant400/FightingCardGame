@@ -14,9 +14,9 @@ public struct inGameDeckModels
     {
         public int playerId;
         public string playerName;
-        public  List<deckModel> InGamePlayersDeckModel = new List<deckModel>();
-
+        public  deckModel.deckGlobalClass InGamePlayersDeckModel = new deckModel.deckGlobalClass();
+        public fighterModel.fighterData fighterData = new fighterModel.fighterData();
     }
-    public static List<playerDecksModels> InGamePlayersDeckModel = new List<playerDecksModels>();
+    public static List<playerDecksModels> InGamePlayersDeckModels = new List<playerDecksModels>();
 
 }

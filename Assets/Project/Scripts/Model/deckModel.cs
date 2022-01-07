@@ -115,6 +115,23 @@ public struct deckModel
         public string cardBuffInformations;
 
     }
+    public class deckGlobalClass
+    {
+     
+        public  int deckID;
+        public  List<cardID> currentDeck = new List<cardID>(20);
+        public  List<cardID> currentDeckLeftCards = new List<cardID>(20);
+        public  List<cardID> lastDeck = new List<cardID>(20);
+        public  int leftCardsInGame = 20;
+        public  bool deckFormed;
+        public  bool noLeftCards;
+        public  int deckRarityValue;
+        public static int CurrentDiamondCards = 0;
+        public static int CurrentGoldCards = 0;
+        public static int CurrentSilverCards = 0;
+        public static int CurrentBronzeCards = 0;
+
+    }
     public static int deckMaxCount=20;
     public static int cardsCounts=50;
     public static int deckID;

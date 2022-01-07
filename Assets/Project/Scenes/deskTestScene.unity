@@ -338,7 +338,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &46908250
@@ -559,7 +578,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &105345591
@@ -873,7 +911,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &172099058
@@ -1015,7 +1072,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &175630317
@@ -1157,7 +1233,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &183163350
@@ -1299,7 +1394,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &183656307
@@ -1757,7 +1871,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &296569753
@@ -1899,7 +2032,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &297098405
@@ -2186,7 +2338,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &376407230
@@ -2486,7 +2657,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &447474787
@@ -2678,7 +2868,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &481581699
@@ -2899,7 +3108,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &501734371
@@ -3120,7 +3348,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &512000411
@@ -3262,7 +3509,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &539782651
@@ -3720,7 +3986,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &575793820
@@ -4357,7 +4642,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &666282763
@@ -4499,7 +4803,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &681575262
@@ -4799,7 +5122,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &737869680
@@ -5020,7 +5362,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &755730795
@@ -5162,7 +5523,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &807518782
@@ -5483,7 +5863,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &841335449
@@ -5625,7 +6024,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 50
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 8
+        valueAddedDetails: 10
+      effectValueAdded: 3
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &841637128
@@ -5846,7 +6264,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &926003071
@@ -5988,7 +6425,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &965304195
@@ -6130,7 +6586,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &982948115
@@ -6272,7 +6747,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &990609260
@@ -6414,7 +6908,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1056336281
@@ -6635,7 +7148,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1082154343
@@ -6856,7 +7388,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1100579129
@@ -7472,7 +8023,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1180731913
@@ -7614,7 +8184,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1182582348
@@ -7993,7 +8582,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1200993678
@@ -8290,7 +8898,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1272627731
@@ -8432,7 +9059,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1275663182
@@ -8653,7 +9299,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1309581995
@@ -9383,7 +10048,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1440897393
@@ -9681,7 +10365,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1454415786
@@ -9823,7 +10526,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1467794038
@@ -10098,7 +10820,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1498552424
@@ -10240,7 +10981,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1568319362
@@ -10382,7 +11142,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1579111465
@@ -10682,7 +11461,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1723558661
@@ -10824,7 +11622,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1763379676
@@ -10966,7 +11783,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1764870430
@@ -11213,7 +12049,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1878604511
@@ -11434,7 +12289,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &1994973065
@@ -11734,7 +12608,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &2026948917
@@ -11876,7 +12769,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &2027601254
@@ -12159,7 +13071,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &2050645548
@@ -12427,7 +13358,26 @@ MonoBehaviour:
     prefab: {fileID: 0}
     staminaRequired: 0
     cardRarityValue: 0
+    attackValue: 0
+    defenceValue: 0
+    stringName: 
+    combIDCode: 0
     type: 0
+    cardTier: 0
+    buffEffectData:
+      cardName: 
+      durationOfBuff: 0
+      effectedValueType:
+        type: 0
+        valueAddedDetails: 0
+      effectValueAdded: 0
+      effectedPlayer: 0
+      numberOfUse: 0
+      combineCardData:
+        needCombine: 0
+        combineCardId: 0
+        otherCardOwned: 0
+      cardBuffInformations: 
     cardDiscription: 
   cardChoosen: 0
 --- !u!114 &2114850839

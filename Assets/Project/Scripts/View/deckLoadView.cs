@@ -26,47 +26,46 @@ public class deckLoadView : MonoBehaviour
     {
         
     }
-    public void loadCardsAtStart()
+    public void loadCardsAtStart(inGameDeckModels.playerDecksModels playerDeck)
     {
-        if (deckModel.currentDeckLeftCards != null)
+        if (playerDeck.InGamePlayersDeckModel != null)
         {
-            if (deckModel.currentDeckLeftCards.Count > cardStartLimit)
+            if (playerDeck.InGamePlayersDeckModel.currentDeckLeftCards.Count >= cardStartLimit)
             {
-                deckModel.currentDeckLeftCards = deckView.Shuffle(deckModel.currentDeckLeftCards);
+                playerDeck.InGamePlayersDeckModel.currentDeckLeftCards = deckView.Shuffle(deckModel.currentDeckLeftCards);
                 for (int i = 0; i < cardStartLimit; i++)
                 {
                     GameObject clone = Instantiate(cardPrefab, loadedCardsParent.transform);
                     deckView.cardButton card = new deckView.cardButton();
                     card.cardChoiceButton = clone.GetComponent<Button>();
                     card.cardButtonClass = clone.GetComponent<cardClass>();
-                    card.cardButtonClass.setCardData(deckModel.currentDeckLeftCards[i]);
+                    card.cardButtonClass.setCardData(playerDeck.InGamePlayersDeckModel.currentDeckLeftCards[i]);
 
-                    deckModel.currentDeckLeftCards.Remove(deckModel.currentDeckLeftCards[i]);
-                    deckModel.currentDeckLeftCards = deckModel.currentDeckLeftCards.Where(x => x != null).ToList();
+                    playerDeck.InGamePlayersDeckModel.currentDeckLeftCards.Remove(deckModel.currentDeckLeftCards[i]);
+                    playerDeck.InGamePlayersDeckModel.currentDeckLeftCards = playerDeck.InGamePlayersDeckModel.currentDeckLeftCards.Where(x => x != null).ToList();
                     currentHoldenCards.Add(card);
 
                 }
             }
-
         }
     }
-    public void loadTurnCard(int numberOfCards)
+    public void loadTurnCard(int numberOfCards, inGameDeckModels.playerDecksModels playerDeck)
     {
-        if (deckModel.currentDeckLeftCards != null)
+        if (playerDeck.InGamePlayersDeckModel != null)
         {
-            if (deckModel.currentDeckLeftCards.Count >= numberOfCards)
+            if (playerDeck.InGamePlayersDeckModel.currentDeckLeftCards.Count >= numberOfCards)
             {
-                deckModel.currentDeckLeftCards = deckView.Shuffle(deckModel.currentDeckLeftCards);
+                playerDeck.InGamePlayersDeckModel.currentDeckLeftCards = deckView.Shuffle(deckModel.currentDeckLeftCards);
                 for (int i = 0; i < numberOfCards; i++)
                 {
                     GameObject clone = Instantiate(cardPrefab, loadedCardsParent.transform);
                     deckView.cardButton card = new deckView.cardButton();
                     card.cardChoiceButton = clone.GetComponent<Button>();
                     card.cardButtonClass = clone.GetComponent<cardClass>();
-                    card.cardButtonClass.setCardData(deckModel.currentDeckLeftCards[i]);
+                    card.cardButtonClass.setCardData(playerDeck.InGamePlayersDeckModel.currentDeckLeftCards[i]);
 
-                    deckModel.currentDeckLeftCards.Remove(deckModel.currentDeckLeftCards[i]);
-                    deckModel.currentDeckLeftCards = deckModel.currentDeckLeftCards.Where(x => x != null).ToList();
+                    playerDeck.InGamePlayersDeckModel.currentDeckLeftCards.Remove(deckModel.currentDeckLeftCards[i]);
+                    playerDeck.InGamePlayersDeckModel.currentDeckLeftCards = playerDeck.InGamePlayersDeckModel.currentDeckLeftCards.Where(x => x != null).ToList();
                     currentHoldenCards.Add(card);
 
                 }
